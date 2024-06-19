@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3eae3;
+}
+/* Start */
+.section {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.section img {
+    max-width: 400px;
+}
+
+.section .content {
+    max-width: 400px;
+    padding: 15px 30px;
+}
+.section .content .p1 {
+    color: #777;
+    letter-spacing: 5px;
+}
+.section .content h1 {
+    font-family: "Fraunces", serif;
+    font-size: 50px;
+}
+.section .content .p2 {
+    color: #777;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.section .sp1 {
+    font-size: 50px;
+    padding-right: 30px;
+    color: #3d8168;
+    font-weight: bold;
+    font-family: "Fraunces", serif;
+}
+.section .sp2 {
+    position: relative;
+    color: #777;
+    font-size: 20px;
+}
+.section .sp2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #777;
+    height: 1px;
+}
+.section .content input {
+    width: 100%;
+    margin-top: 35px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #3d8168;
+    cursor: pointer;
+}
+.section .content input:hover {
+    background-color: #1a4031;
+}
+.section  form {
+    position: relative;
+}
+.section  form i {
+    position: absolute;
+    top: 60%;
+    color: white;
+    left: 25%;
+}
+@media(max-width:767px ) {
+    .section {
+        flex-direction: column;
+    }
+    .section img {
+        width: 400px;
+        height: 300px;
+    }
+}
+/* End */
